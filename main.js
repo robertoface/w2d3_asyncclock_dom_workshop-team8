@@ -31,10 +31,13 @@ const tickTock = document.querySelector(".hand")
 
 function incrementCount() {
         count++
-        return tickTock.style.transform = `rotate(6deg)`, 
+        return tickTock.style.transform = `rotate(${count*6}deg)`, 
         console.log(count)
 }
 setInterval (incrementCount, 1000)
+                                // this works! Hurrah!
+                                // count of 0, 1, 2, 3... is multiplied by 6 to make a rotation of 0, 6, 12, 18 degrees.
+
 
 
 // querySelector of the hand (class = hand)
