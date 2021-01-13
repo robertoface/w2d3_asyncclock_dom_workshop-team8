@@ -27,7 +27,8 @@ Each time it changes, tick the hand round 6 degrees.
 /* step 1 , sort out the counter. In a console log, every 1000ms , tick up by 1. */
 
 let count = 0
-const tickTock = document.querySelector(".hand")
+const tickTock = document.querySelector("#seconds")
+
 
 function incrementCount() {
         count++
@@ -35,10 +36,27 @@ function incrementCount() {
         console.log(count)
 }
 setInterval (incrementCount, 1000)
+
+
+let countMin = 0
+const tickTockMin = document.querySelector("#minutes")
+
+
+function incrementCount() {
+        countMin++
+        return tickTockMin.style.transform = `rotate(${countMin*6}deg)`, 
+        console.log(countMin)
+}
+setInterval (incrementCount, 6000)
+
+
+
                                 // this works! Hurrah!
                                 // count of 0, 1, 2, 3... is multiplied by 6 to make a rotation of 0, 6, 12, 18 degrees.
+                                //used string interpolation to make the clock dynamic
 
 
+//
 
 // querySelector of the hand (class = hand)
 // rotate 6 deg for every 1000 count
