@@ -25,7 +25,7 @@ img {
   position: absolute;
   height: 120px;
   width: 5px;
-  border-top: 120px solid black;
+  border-top: 120px solid rgb(255, 0, 0);
 }
 .hide {
   display: none;

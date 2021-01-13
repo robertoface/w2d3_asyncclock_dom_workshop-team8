@@ -41,14 +41,14 @@ setInterval (incrementCount, 1000)
 let countMin = 0
 const tickTockMin = document.querySelector("#minutes")
 
-
-function incrementCount() {
+// created variable called clockMinutes
+let clockMinutes = function incrementCount() {
         countMin++
         return tickTockMin.style.transform = `rotate(${countMin*6}deg)`, 
         console.log(countMin)
 }
-setInterval (incrementCount, 6000)
-
+setInterval (clockMinutes, 60000)
+// now says clockMinutes, not incrementCount.
 
 
                                 // this works! Hurrah!
