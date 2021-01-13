@@ -27,16 +27,25 @@ Each time it changes, tick the hand round 6 degrees.
 /* step 1 , sort out the counter. In a console log, every 1000ms , tick up by 1. */
 
 let count = 0
+const tickTock = document.querySelector(".hand")
 
 function incrementCount() {
         count++
-        return console.log(count)
+        return tickTock.style.transform = `rotate(6deg)`, 
+        console.log(count)
 }
 setInterval (incrementCount, 1000)
-// querySelector of the hand (class = hand)
-// apply the 
- const tickTock = document.querySelector(".hand")
 
+
+// querySelector of the hand (class = hand)
+// rotate 6 deg for every 1000 count
+//  const tickTock = document.querySelector(".hand")
+
+//  function onTheClock () {
+
+//  }
+
+ 
 
 // function countUp () {
 //         console.log("1")
