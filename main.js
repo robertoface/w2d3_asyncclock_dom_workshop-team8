@@ -33,6 +33,10 @@ function incrementCount() {
         return console.log(count)
 }
 setInterval (incrementCount, 1000)
+// querySelector of the hand (class = hand)
+// apply the 
+ const tickTock = document.querySelector(".hand")
+
 
 // function countUp () {
 //         console.log("1")
