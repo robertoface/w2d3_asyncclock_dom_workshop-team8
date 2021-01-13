@@ -26,4 +26,17 @@ Each time it changes, tick the hand round 6 degrees.
 
 /* step 1 , sort out the counter. In a console log, every 1000ms , tick up by 1. */
 
+let count = 0
 
+function incrementCount() {
+        count++
+        return console.log(count)
+}
+setInterval (incrementCount, 1000)
+
+// function countUp () {
+//         console.log("1")
+//         setInterval(incrementCount, 1000)
+// };
+
+//what's happening in setinterval
